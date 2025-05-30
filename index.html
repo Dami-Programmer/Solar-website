@@ -3,46 +3,741 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Rvpowers</title>
   </head>
   <body>
-    <header>
-      <a href="#">
-        <img class="logo" src="black.png" alt="Image of the Company logo" />
-      </a>
+    <section class="hero">
+      <div class="gradient-overlay"></div>
+      <div class="image-overlay"></div>
+      <div class="hero-content">
+        <h1 class="heading-primary">Illuminate Your Future</h1>
+        <h2 class="heading-secondary">
+          Sustainable Solar Solutions for a Brighter Tomorrow
+        </h2>
+        <a href="#categories" class="button">
+          Explore Our Solutions
 
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">About Is</a>
-        <a href="#"> Contact Us</a>
-      </nav>
-    </header>
+          <svg fill="currentColor" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.25 8.27a.75.75 0 01-.02-1.06z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
 
-    <main>
-      <section class="section-hero">
-        <div class="hero">
-          <div>
-            <span class="subheading">Sustainable Energy Solution</span>
+        <a href="#" class="arrow-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide-arrow-down"
+          >
+            <path d="M12 5v14"></path>
+            <path d="m19 12-7 7-7-7"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
 
-            <h1 class="heading-primary">
-              Power Your Future with Clean Solar Energy
-            </h1>
+    <section class="featured-categories">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="feature">Featured Categories</h2>
+          <p class="feature-tertiary">
+            Explore our range of high-quality solar equipment designed to meet
+            your energy needs
+          </p>
+        </div>
+        <div class="category-grid">
+          <button class="category-button">
+            <div class="icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-sun h-8 w-8 text-green-600"
+                data-id="element-88"
+              >
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </svg>
+            </div>
+            <h3 class="heading-tertiary">Solar Panels</h3>
+            <p>High-efficiency panels for maximum energy conversion</p>
+            <span class="view-products">
+              View Products
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </span>
+          </button>
 
-            <p class="heading-secondary">
-              Discover premium solar equipment for sustainable living. Transform
-              your energy consumption with our cutting-edge solutions.
-            </p>
+          <button class="category-button">
+            <div class="icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-zap h-8 w-8 text-green-600"
+                data-id="element-89"
+              >
+                <path
+                  d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="heading-tertiary">Power Inverters</h3>
+            <p>Smart inverters for reliable power management</p>
+            <span class="view-products"
+              >View products
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </span>
+          </button>
 
-            <a href="#">Explore Products &rarr;</a>
-            <a href="#">Learn More &gt; </a>
+          <button class="category-button">
+            <div class="icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-battery h-8 w-8 text-green-600"
+                data-id="element-90"
+              >
+                <rect width="16" height="10" x="2" y="7" rx="2" ry="2"></rect>
+                <line x1="22" x2="22" y1="11" y2="13"></line>
+              </svg>
+            </div>
+            <h3 class="heading-tertiary">Battery Storage</h3>
+            <p>Advanced storage solutions for 24/7 power</p>
+            <span class="view-products"
+              >View Products
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="text-center">
+          <h2>Our Products</h2>
+          <p>
+            Browse our selection of premium solar equipment and find the perfect
+            solution for your needs
+          </p>
+        </div>
+
+        <div class="button-group">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">Solar Panels</button>
+          <button class="filter-btn">Inverter Machines</button>
+          <button class="filter-btn">Battery Storage</button>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="High-Efficiency Solar Panel"
+              />
+              <span class="badge">Solar Panels</span>
+            </div>
+            <div class="content">
+              <h3>High-Efficiency Solar Panel</h3>
+              <p>400W Monocrystalline solar panel with advanced efficiency</p>
+              <div class="price-action">
+                <span class="price">$599</span>
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
           </div>
-          <div>
-            <img class="hero-img" src="web img.jpg" alt="hero img" />
+
+          <div class="product-card">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Premium Solar Array"
+              />
+              <span class="badge">Solar Panels</span>
+            </div>
+            <div class="content">
+              <h3>Premium Solar Array</h3>
+              <p>600W High-performance solar panel system</p>
+              <div class="price-action">
+                <span class="price">$799</span>
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Premium Solar Array"
+              />
+              <span class="badge">Solar Panels</span>
+            </div>
+            <div class="content">
+              <h3>Premium Solar Array</h3>
+              <p>600W High-performance solar panel system</p>
+              <div class="price-action">
+                <span class="price">$799</span>
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Premium Solar Array"
+              />
+              <span class="badge">Solar Panels</span>
+            </div>
+            <div class="content">
+              <h3>Premium Solar Array</h3>
+              <p>600W High-performance solar panel system</p>
+              <div class="price-action">
+                <span class="price">$799</span>
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Premium Solar Array"
+              />
+              <span class="badge">Solar Panels</span>
+            </div>
+            <div class="content">
+              <h3>Premium Solar Array</h3>
+              <p>600W High-performance solar panel system</p>
+              <div class="price-action">
+                <span class="price">$799</span>
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Premium Solar Array"
+              />
+              <span class="badge">Solar Panels</span>
+            </div>
+            <div class="content">
+              <h3>Premium Solar Array</h3>
+              <p>600W High-performance solar panel system</p>
+              <div class="price-action">
+                <span class="price">$799</span>
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Premium Solar Array"
+              />
+              <span class="badge">Solar Panels</span>
+            </div>
+            <div class="content">
+              <h3>Premium Solar Array</h3>
+              <p>600W High-performance solar panel system</p>
+              <div class="price-action">
+                <span class="price">$799</span>
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container">
+              <img
+                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Premium Solar Array"
+              />
+              <span class="badge">Solar Panels</span>
+            </div>
+            <div class="content">
+              <h3>Premium Solar Array</h3>
+              <p>600W High-performance solar panel system</p>
+              <div class="price-action">
+                <span class="price">$799</span>
+                <button class="details-btn">View Details</button>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="text-center">
+          <h2>About SolarTech Solutions</h2>
+          <p>
+            Leading the way in sustainable energy solutions for a brighter
+            tomorrow
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="about-gap">
+            <p class="text-lg">
+              SolarTech Solutions is a leading provider of sustainable energy
+              solutions, specializing in high-quality solar equipment for
+              residential and commercial applications. With years of experience
+              and dedication to renewable energy, we're committed to helping you
+              make the switch to clean, sustainable power.
+            </p>
+            <div class="highlight-box grid highlight-grid-2">
+              <div class="stat">
+                <div class="stat-number">10k+</div>
+                <div>Installations</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">98%</div>
+                <div>Client Satisfaction</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">15+</div>
+                <div>Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">24/7</div>
+                <div>Support</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="about-feature">
+              <div class="icon-box sun-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sun w-12 h-12 text-yellow-500"
+                  data-id="element-157"
+                >
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="m4.93 4.93 1.41 1.41"></path>
+                  <path d="m17.66 17.66 1.41 1.41"></path>
+                  <path d="M2 12h2"></path>
+                  <path d="M20 12h2"></path>
+                  <path d="m6.34 17.66-1.41 1.41"></path>
+                  <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+              </div>
+              <h3>Quality Products</h3>
+              <p>
+                We offer only the highest quality solar equipment from trusted
+                manufacturers.
+              </p>
+            </div>
+            <div class="about-feature">
+              <div class="icon-box green-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class=""
+                  data-id="element-158"
+                >
+                  <rect width="16" height="10" x="2" y="7" rx="2" ry="2"></rect>
+                  <line x1="22" x2="22" y1="11" y2="13"></line>
+                </svg>
+              </div>
+              <h3>Energy Solutions</h3>
+              <p>
+                Comprehensive energy solutions tailored to your specific needs.
+              </p>
+            </div>
+            <div class="about-feature">
+              <div class="icon-box green-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class=""
+                  data-id="element-159"
+                >
+                  <path
+                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                  ></path>
+                  <path
+                    d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Sustainability</h3>
+              <p>
+                Committed to promoting sustainable and renewable energy sources.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h2>Trusted by Businesses & Homeowners</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="testimonial">
+            <div class="star-container">
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+            </div>
+
+            <p>
+              The quality of their solar panels exceeded our expectations. Our
+              energy bills have significantly decreased.
+            </p>
+            <div class="border-btm"></div>
+            <div class="author">Sarah Johnson</div>
+            <div class="role">Homeowner</div>
+          </div>
+          <div class="testimonial">
+            <div class="star-container">
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+            </div>
+
+            <p>
+              Professional team, excellent products, and outstanding after-sales
+              support. Highly recommended!
+            </p>
+            <div class="border-btm"></div>
+            <div class="author">Michael Chen</div>
+            <div class="role">Business Owner</div>
+          </div>
+          <div class="testimonial">
+            <div class="star-container">
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                class="star-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+            </div>
+
+            <p>
+              Excellent customer service and high-quality solar solutions. I'm
+              very satisfied with their work.
+            </p>
+            <div class="border-btm"></div>
+            <div class="author">Emma Lee</div>
+            <div class="role">Homeowner</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3 class="footer-heading">About SolarTech</h3>
+            <p class="footer-text">
+              Leading provider of solar equipment and sustainable energy
+              solutions for homes and businesses.
+            </p>
+          </div>
+          <div>
+            <h3 class="footer-heading">Contact Us</h3>
+            <p class="footer-text">123 Solar Street</p>
+            <p class="footer-text">Sunshine City, SC 12345</p>
+            <p class="footer-text">info@solartech.com</p>
+          </div>
+          <div>
+            <h3 class="footer-heading">Connect With Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <!-- Instagram Icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="icon"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <!-- Facebook Icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="icon"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/1234567890"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <!-- Phone Icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="icon"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2023 SolarTech Solutions. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,165 @@
+/* Responsive Design Breakpoints */
+
+/* For large desktop screens (1440px and up) */
+@media (min-width: 1440px) {
+  html {
+    font-size: 70%;
+  }
+  .container {
+    max-width: 120rem;
+  }
+  .grid-3,
+  .product-grid,
+  .category-grid {
+    gap: 8rem;
+  }
+}
+
+/* For medium desktop/laptops (1024px and up) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 105rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+  .grid-3,
+  .product-grid,
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: centert;
+  }
+}
+
+/* For tablets (768px and up) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90rem;
+  }
+  html {
+    font-size: 50%;
+  }
+  .grid-2,
+  .grid-3,
+  .product-grid,
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .hero-content h1 {
+    font-size: 4.2rem;
+  }
+  .heading-primary {
+    font-size: 4.2rem;
+  }
+  .heading-secondary {
+    font-size: 2rem;
+  }
+}
+
+/* For mobile devices (425px and up) */
+@media (max-width: 425px) {
+  .grid-2,
+  .grid-3,
+  .product-grid,
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #16a34a;
+    margin-bottom: 8px;
+  }
+
+  .highlight-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+  }
+
+  html {
+    font-size: 46.875%;
+  }
+  .hero-content h1 {
+    font-size: 3.6rem;
+  }
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
+  .category-button {
+    padding: 2rem;
+  }
+  .product-card {
+    margin-bottom: 3rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-line-1 {
+    grid-column: 1 / -1;
+  }
+}
+
+/* For small mobile devices (375px and up) */
+@media (max-width: 375px) {
+  html {
+    font-size: 43.75%;
+  }
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+  .heading-secondary {
+    font-size: 1.6rem;
+  }
+  .category-button {
+    padding: 1.5rem;
+  }
+  .product-card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* For very small screens (320px and up) */
+@media (max-width: 320px) {
+  .text-lg {
+    font-size: 1.7rem;
+  }
+  html {
+    font-size: 40%;
+  }
+  .heading-primary {
+    font-size: 2.8rem;
+  }
+  .heading-secondary {
+    font-size: 1.4rem;
+  }
+  .hero-content a.button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  .product-card {
+    margin-bottom: 2rem;
+  }
+}

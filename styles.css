@@ -59,18 +59,7 @@
   width: 2rem;
   height: 2rem;
 }
-
-.arrow-link {
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-  position: absolute;
-  bottom: -150%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.lucide-arrow-down {
+u.lucide-arrow-down {
   width: 3rem;
   height: 3rem;
 }

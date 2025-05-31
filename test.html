@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .grid-item {
+        background-color: lightblue;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .grid-item.hidden {
+        display: none;
+      }
+
+      .buttons button {
+        margin: 0.3rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="buttons">
+      <button data-filter="all">All</button>
+      <button data-filter="category1">Category 1</button>
+      <button data-filter="category2">Category 2</button>
+      <button data-filter="category3">Category 3</button>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item category1">Item A (Cat 1)</div>
+      <div class="grid-item category2">Item B (Cat 2)</div>
+      <div class="grid-item category1">Item C (Cat 1)</div>
+      <div class="grid-item category3">Item D (Cat 3)</div>
+      <div class="grid-item category2">Item E (Cat 2)</div>
+      <div class="grid-item category3">Item F (Cat 3)</div>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll(".buttons button");
+      const items = document.querySelectorAll(".grid-item");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.getAttribute("data-filter");
+
+          items.forEach((item) => {
+            if (filter === "all") {
+              item.classList.remove("hidden");
+            } else {
+              if (item.classList.contains(filter)) {
+                item.classList.remove("hidden");
+              } else {
+                item.classList.add("hidden");
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

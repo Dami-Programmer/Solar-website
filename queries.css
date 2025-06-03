@@ -65,6 +65,14 @@
   .heading-secondary {
     font-size: 2rem;
   }
+
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* For mobile devices (425px and up) */
@@ -138,6 +146,14 @@
   }
   .product-card {
     margin-bottom: 2rem;
+  }
+
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 }
 

@@ -594,3 +594,8 @@ u.lucide-arrow-down {
   text-align: center;
   color: #d1d5db;
 }
+
+.footer-logo {
+  width: 12rem;
+  margin-bottom: 3rem;
+}

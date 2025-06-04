@@ -240,8 +240,8 @@ u.lucide-arrow-down {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
 }
 
 .product-card {
@@ -271,6 +271,7 @@ u.lucide-arrow-down {
 .image-container img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   transition: transform 0.5s ease;
 }

@@ -8,8 +8,19 @@ const solarProducts = [
         products: [
           {
             name: "400W High-Efficiency Panel",
-            image:
-              "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+            image: "image/modi-sine-wava.jpg",
+            description:
+              "Premium 400W monocrystalline panel designed for high performance and durability.",
+            price: 350.0,
+          },
+        ],
+      },
+      {
+        name: "Monocrystalline",
+        products: [
+          {
+            name: "400W High-Efficiency Panel",
+            image: "image/pure sine wava.jpg",
             description:
               "Premium 400W monocrystalline panel designed for high performance and durability.",
             price: 350.0,
@@ -21,8 +32,7 @@ const solarProducts = [
         products: [
           {
             name: "320W Standard Panel",
-            image:
-              "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+            image: "image/hybrid-inverter.jpg",
             description:
               "Reliable 320W polycrystalline panel for various applications.",
             price: 275.0,

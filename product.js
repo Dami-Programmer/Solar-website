@@ -11,7 +11,6 @@ const solarProducts = [
             image: "image/modi-sine-wava.jpg",
             description:
               "Simpler and more affordable, but may not be suitable for all devices.",
-            // price: 350.0,
           },
         ],
       },
@@ -23,7 +22,6 @@ const solarProducts = [
             image: "image/pure-sine-wava.jpg",
             description:
               "Produce a smooth and consistent wave, suitable for sensitive electronic devices.",
-            price: 350.0,
           },
         ],
       },
@@ -35,7 +33,6 @@ const solarProducts = [
             image: "image/hybrid-inverter.jpg",
             description:
               "Combine solar and battery power, allowing for energy storage and grid interaction.",
-            price: 275.0,
           },
         ],
       },
@@ -45,41 +42,35 @@ const solarProducts = [
     category: "Solar-panel",
     subcategories: [
       {
-        name: "String Inverters",
+        name: "Jinko Solar",
         products: [
           {
-            name: "5kW String Inverter",
-            image:
-              "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+            name: "Jinko Solar",
+            image: "image/jinko.jpg",
             description:
-              "Efficient 5kW string inverter for grid-tied solar systems.",
-            price: 1200.0,
+              "Jinko Solar is one of the world's largest and most trusted solar panel manufacturers. ",
           },
         ],
       },
       {
-        name: "String Inverters",
+        name: "Canadian Solar",
         products: [
           {
-            name: "5kW String Inverter",
-            image:
-              "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+            name: "Canadian Solar",
+            image: "image/monocry.jpg",
             description:
-              "Efficient 5kW string inverter for grid-tied solar systems.",
-            price: 1200.0,
+              "is a globally recognized brand that combines premium quality with great performance. ",
           },
         ],
       },
       {
-        name: "String Inverters",
+        name: "Polycrystalline",
         products: [
           {
-            name: "5kW String Inverter",
-            image:
-              "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+            name: "Polycrystalline",
+            image: "image/poli-cry.jpg",
             description:
-              "Efficient 5kW string inverter for grid-tied solar systems.",
-            price: 1200.0,
+              "Polycrystalline (also known as poly) solar panels are made from multiple silicon crystals melted together. ",
           },
         ],
       },
@@ -92,38 +83,390 @@ const solarProducts = [
         name: "Lithium-Ion",
         products: [
           {
-            name: "10kWh Lithium Battery",
-            image:
-              "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+            name: "Lithium Battery",
+            image: "image/lithium.jpg",
             description:
-              "High-capacity 10kWh lithium battery system for solar storage.",
-            price: 5500.0,
+              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
           },
         ],
       },
       {
-        name: "Lithium-Ion",
+        name: "Sealed Battery",
         products: [
           {
-            name: "10kWh Lithium Battery",
-            image:
-              "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+            name: "Sealed Battery",
+            image: "image/block.jpg",
             description:
-              "High-capacity 10kWh lithium battery system for solar storage.",
-            price: 5500.0,
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
           },
         ],
       },
       {
+        name: "Lead-Acid Battery",
+        products: [
+          {
+            name: "Lead-Acid Battery",
+            image: "image/acid.jpg",
+            description:
+              "Lead-Acid batteries are the most common and affordable type of inverter battery used in Nigeria. ",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Street-light",
+    subcategories: [
+      {
+        name: "Street light with CCTV",
+        products: [
+          {
+            name: "Street light with CCTV",
+            image: "image/cctv-street-light.jpg",
+            description:
+              "A smart solar street light that includes a built-in CCTV camera for 24/7 security. It runs on solar power, saving energy while keeping areas safe.",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/split-solar-light.jpg",
+            description:
+              "This light has separate solar panel and lamp units for more flexible positioning. It offers higher efficiency and better performance in low-sunlight areas.",
+          },
+        ],
+      },
+      {
+        name: "Lead-Acid Battery",
+        products: [
+          {
+            name: "Lead-Acid Battery",
+            image: "image/all-in-one-light.jpg",
+            description:
+              "An all-in-one light with panel, battery, and LED lamp in a single compact unit. Easy to install, low maintenance, and fully powered by the sun. ",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Camera",
+    subcategories: [
+      {
+        name: "Camera",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/01.jpg",
+            description: "",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/03.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+      {
+        name: "Lead-Acid Battery",
+        products: [
+          {
+            name: "Lead-Acid Battery",
+            image: "image/02.jpg",
+            description:
+              "Lead-Acid batteries are the most common and affordable type of inverter battery used in Nigeria. ",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Charge-controller",
+    subcategories: [
+      {
         name: "Lithium-Ion",
         products: [
           {
-            name: "10kWh Lithium Battery",
-            image:
-              "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+            name: "Lithium Battery",
+            image: "image/Mppt.jpg",
             description:
-              "High-capacity 10kWh lithium battery system for solar storage.",
-            price: 5500.0,
+              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/Pwm.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Camera",
+    subcategories: [
+      {
+        name: "Camera",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/01.jpg",
+            description: "",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/03.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+      {
+        name: "Lead-Acid Battery",
+        products: [
+          {
+            name: "Lead-Acid Battery",
+            image: "image/02.jpg",
+            description:
+              "Lead-Acid batteries are the most common and affordable type of inverter battery used in Nigeria. ",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Charge-controller",
+    subcategories: [
+      {
+        name: "Lithium-Ion",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/Mppt.jpg",
+            description:
+              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/Pwm.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Camera",
+    subcategories: [
+      {
+        name: "Camera",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/01.jpg",
+            description: "",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/03.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+      {
+        name: "Lead-Acid Battery",
+        products: [
+          {
+            name: "Lead-Acid Battery",
+            image: "image/02.jpg",
+            description:
+              "Lead-Acid batteries are the most common and affordable type of inverter battery used in Nigeria. ",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Charge-controller",
+    subcategories: [
+      {
+        name: "Lithium-Ion",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/Mppt.jpg",
+            description:
+              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/Pwm.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Gen",
+    subcategories: [
+      {
+        name: "Camera",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/solar-gen-1.jpg",
+            description: "",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/solar-gen-2.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+      {
+        name: "Lead-Acid Battery",
+        products: [
+          {
+            name: "Lead-Acid Battery",
+            image: "image/solar-gen.jpg",
+            description:
+              "Lead-Acid batteries are the most common and affordable type of inverter battery used in Nigeria. ",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Fan",
+    subcategories: [
+      {
+        name: "Lithium-Ion",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/fan.jpg",
+            description:
+              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/fan-2.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Ac",
+    subcategories: [
+      {
+        name: "Camera",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/01.jpg",
+            description: "",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/03.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+          },
+        ],
+      },
+      {
+        name: "Lead-Acid Battery",
+        products: [
+          {
+            name: "Lead-Acid Battery",
+            image: "image/02.jpg",
+            description:
+              "Lead-Acid batteries are the most common and affordable type of inverter battery used in Nigeria. ",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    category: "Pump",
+    subcategories: [
+      {
+        name: "Lithium-Ion",
+        products: [
+          {
+            name: "Lithium Battery",
+            image: "image/Mppt.jpg",
+            description:
+              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+          },
+        ],
+      },
+      {
+        name: "Sealed Battery",
+        products: [
+          {
+            name: "Sealed Battery",
+            image: "image/Pwm.jpg",
+            description:
+              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
           },
         ],
       },
@@ -137,7 +480,7 @@ const populateProductGrid = () => {
 
   solarProducts.forEach(({ category, subcategories }) => {
     subcategories.forEach(({ products }) => {
-      products.forEach(({ name, image, description, price }) => {
+      products.forEach(({ name, image, description }) => {
         const card = document.createElement("div");
         card.className = `product-card ${category.replace(/\s+/g, "-")}`;
 

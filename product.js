@@ -4,37 +4,37 @@ const solarProducts = [
     category: "Inverter",
     subcategories: [
       {
-        name: "Monocrystalline",
+        name: "Modified Sine Wave Inverters",
         products: [
           {
-            name: "400W High-Efficiency Panel",
+            name: "Modified Sine Wave ",
             image: "image/modi-sine-wava.jpg",
             description:
-              "Premium 400W monocrystalline panel designed for high performance and durability.",
-            price: 350.0,
+              "Simpler and more affordable, but may not be suitable for all devices.",
+            // price: 350.0,
           },
         ],
       },
       {
-        name: "Monocrystalline",
+        name: "Pure Sine Wave Inverters",
         products: [
           {
-            name: "400W High-Efficiency Panel",
-            image: "image/pure sine wava.jpg",
+            name: "Pure Sine Wave ",
+            image: "image/pure-sine-wava.jpg",
             description:
-              "Premium 400W monocrystalline panel designed for high performance and durability.",
+              "Produce a smooth and consistent wave, suitable for sensitive electronic devices.",
             price: 350.0,
           },
         ],
       },
       {
-        name: "Polycrystalline",
+        name: "Hybrid Inverters",
         products: [
           {
-            name: "320W Standard Panel",
+            name: " Hybrid Inverters",
             image: "image/hybrid-inverter.jpg",
             description:
-              "Reliable 320W polycrystalline panel for various applications.",
+              "Combine solar and battery power, allowing for energy storage and grid interaction.",
             price: 275.0,
           },
         ],
@@ -150,8 +150,8 @@ const populateProductGrid = () => {
             <h3>${name}</h3>
             <p>${description}</p>
             <div class="price-action">
-              <span class="price">$${price.toFixed(2)}</span>
-              <button class="details-btn">View Details</button>
+              
+              <button class="details-btn">Avaliable at the store</button>
             </div>
           </div>
         `;

@@ -325,7 +325,8 @@ u.lucide-arrow-down {
 .image-container {
   position: relative;
   overflow: hidden;
-  height: 14rem;
+  width: 100%;
+  height: 200px;
 }
 
 .image-container img {
@@ -347,8 +348,8 @@ u.lucide-arrow-down {
   background-color: #16a34a;
   color: white;
   padding: 0.25rem 0.75rem;
-  border-radius: 50px;
-  font-size: 0.75rem;
+  border-radius: 5rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -360,7 +361,7 @@ u.lucide-arrow-down {
   font-size: 1.7rem;
   font-weight: 600;
   color: #1f2937da;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   transition: color 0.3s ease;
 }
 
@@ -370,8 +371,9 @@ u.lucide-arrow-down {
 
 .content p {
   color: #4b5563;
-  font-size: 1.2rem;
-  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .price-action {
@@ -450,7 +452,7 @@ u.lucide-arrow-down {
 }
 
 .text-lg {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #222;
   line-height: 1.7;
   font-weight: normal;

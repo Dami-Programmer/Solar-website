@@ -21,11 +21,16 @@
     max-width: 105rem;
   }
 
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
   html {
     font-size: 56.25%;
   }
   .grid-3,
-  .product-grid,
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -42,6 +47,7 @@
   .container {
     max-width: 90rem;
   }
+
   html {
     font-size: 50%;
   }

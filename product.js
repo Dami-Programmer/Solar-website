@@ -86,7 +86,7 @@ const solarProducts = [
             name: "Lithium Battery",
             image: "image/lithium.jpg",
             description:
-              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+              "are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
           },
         ],
       },
@@ -159,31 +159,32 @@ const solarProducts = [
         name: "Camera",
         products: [
           {
-            name: "Lithium Battery",
+            name: "Bullet CCTV Camera",
             image: "image/01.jpg",
-            description: "",
+            description:
+              "A weatherproof surveillance camera designed for long-range outdoor monitoring. Ideal for homes, offices, and street security with infrared night vision support.",
           },
         ],
       },
       {
-        name: "Sealed Battery",
+        name: "Camera",
         products: [
           {
-            name: "Sealed Battery",
+            name: "Smart Security Light Camera",
             image: "image/03.jpg",
             description:
-              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+              "black outdoor security camera has two antennas and a circular array of LED lights around the lens, likely offering night vision and wireless connectivity.",
           },
         ],
       },
       {
-        name: "Lead-Acid Battery",
+        name: "Camera",
         products: [
           {
-            name: "Lead-Acid Battery",
+            name: "Infrared Bullet CCTV Camera",
             image: "image/02.jpg",
             description:
-              "Lead-Acid batteries are the most common and affordable type of inverter battery used in Nigeria. ",
+              "compact night vision surveillance camera with infrared LEDs for clear monitoring in low light. Suitable for both indoor and outdoor security systems. ",
           },
         ],
       },
@@ -193,24 +194,24 @@ const solarProducts = [
     category: "Solar-Charge-controller",
     subcategories: [
       {
-        name: "Lithium-Ion",
+        name: "Controller",
         products: [
           {
-            name: "Lithium Battery",
+            name: "MPPT",
             image: "image/Mppt.jpg",
             description:
-              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+              "MPPT charge controllers optimize the power output from solar panels by adjusting voltage and current for maximum efficiency.",
           },
         ],
       },
       {
-        name: "Sealed Battery",
+        name: "Controller",
         products: [
           {
-            name: "Sealed Battery",
+            name: "PWM",
             image: "image/Pwm.jpg",
             description:
-              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+              "PWM controllers regulate solar charging by gradually reducing the power as the battery nears full capacity, making them cost-effective for small systems.",
           },
         ],
       },
@@ -220,34 +221,35 @@ const solarProducts = [
     category: "Solar-Gen",
     subcategories: [
       {
-        name: "Camera",
+        name: "Power-station",
         products: [
           {
-            name: "Lithium Battery",
+            name: "LE1000 portable power station",
             image: "image/solar-gen-1.jpg",
-            description: "",
+            description:
+              "versatile battery-powered generator with multiple outlets (AC, USB, car) and a digital display, ideal for providing reliable power during outages, outdoor activities, or as a backup for various electronic devices.",
           },
         ],
       },
       {
-        name: "Sealed Battery",
+        name: "Power-station",
         products: [
           {
-            name: "Sealed Battery",
+            name: "Marsitek portable power station",
             image: "image/solar-gen-2.jpg",
             description:
-              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+              "is a versatile off-grid solar generator with multiple output ports and a digital display, shown here paired with a solar panel for charging.",
           },
         ],
       },
       {
-        name: "Lead-Acid Battery",
+        name: "Power-station",
         products: [
           {
-            name: "Lead-Acid Battery",
+            name: "COLASOLAR off-grid inverter system",
             image: "image/solar-gen.jpg",
             description:
-              "Lead-Acid batteries are the most common and affordable type of inverter battery used in Nigeria. ",
+              " a compact power solution featuring a single AC output socket, designed for residential or small business use. ",
           },
         ],
       },
@@ -257,24 +259,24 @@ const solarProducts = [
     category: "Rechargeable-fan",
     subcategories: [
       {
-        name: "Lithium-Ion",
+        name: "Fan",
         products: [
           {
-            name: "Lithium Battery",
+            name: "ORASA",
             image: "image/fan.jpg",
             description:
-              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+              "rechargeable standing fan with a remote control, designed to provide cooling even during power outages.",
           },
         ],
       },
       {
-        name: "Sealed Battery",
+        name: "Fan",
         products: [
           {
-            name: "Sealed Battery",
+            name: "Fanelec",
             image: "image/fan-2.jpg",
             description:
-              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+              "Rechargeable Fan with Solar Panel and Remote is an off-grid cooling and lighting solution, featuring a standing fan, two LED bulbs, and a solar panel for charging.",
           },
         ],
       },
@@ -284,23 +286,24 @@ const solarProducts = [
     category: "Inverter-Ac",
     subcategories: [
       {
-        name: "Camera",
+        name: "AC",
         products: [
           {
-            name: "Lithium Battery",
+            name: "Royal split AC",
             image: "image/ac-1.jpg",
-            description: "",
+            description:
+              " unit with a copper coil, typically named based on its cooling capacity and brand",
           },
         ],
       },
       {
-        name: "Sealed Battery",
+        name: "AC",
         products: [
           {
-            name: "Sealed Battery",
+            name: "1.5 HP inverter split AC",
             image: "image/ac-2.jpg",
             description:
-              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+              "unit with a copper coil, typically named based on its cooling capacity and brand",
           },
         ],
       },
@@ -310,24 +313,24 @@ const solarProducts = [
     category: "Solar-Pump",
     subcategories: [
       {
-        name: "Lithium-Ion",
+        name: "Solar-pump",
         products: [
           {
-            name: "Lithium Battery",
+            name: "Solar-pump",
             image: "image/pump-1.jpg",
             description:
-              "Lithium batteries are the most advanced and powerful option available today. They are lightweight, fast-charging, and have a longer lifespan",
+              "Solar water pump system provides a sustainable and efficient solution for accessing water in various environments. ",
           },
         ],
       },
       {
-        name: "Sealed Battery",
+        name: "Solar-pump",
         products: [
           {
-            name: "Sealed Battery",
+            name: "Solar-pump",
             image: "image/pump-2.jpg",
             description:
-              "Sealed batteries are a type of lead-acid battery that doesn't need water refilling or maintenance.",
+              "Solar water pump system provides a sustainable and efficient solution for accessing water in various environments.",
           },
         ],
       },

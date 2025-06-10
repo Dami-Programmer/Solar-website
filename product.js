@@ -368,6 +368,7 @@ const populateProductGrid = () => {
     });
   });
   setUpFilter();
+  textAnimate();
 };
 
 // Initialize when DOM is ready

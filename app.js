@@ -1,27 +1,55 @@
+// Initialize AOS (Animate On Scroll)
+AOS.init({
+  duration: 800,
+  easing: "ease-in-out",
+  once: false,
+  mirror: true,
+  offset: 120,
+  delay: 100,
+});
+
 const setUpFilter = () => {
   const buttons = document.querySelectorAll(".button-group button");
   const items = document.querySelectorAll(".product-card");
+
+  const aboutSection = document.querySelector(".about-section");
+  const productsSection = document.getElementById("products");
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.getAttribute("data-filter");
 
+      // Update active button
       buttons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
+      // Filter product cards
       items.forEach((item) => {
-        if (filter === "all") {
-          item.classList.remove("hidden");
-        } else {
-          if (item.classList.contains(filter)) {
-            item.classList.remove("hidden");
-          } else {
-            item.classList.add("hidden");
-          }
-        }
+        const match = filter === "all" || item.classList.contains(filter);
+        item.classList.toggle("hidden", !match);
       });
+
+      // Always show About section
+      aboutSection.classList.remove("hidden");
+
+      // ✅ Reset AOS animation on About section
+      aboutSection.classList.remove("aos-animate");
+      void aboutSection.offsetWidth; // Trigger reflow
+      aboutSection.classList.add("aos-animate");
+
+      // ✅ Refresh AOS in case new elements are revealed
+      if (typeof AOS !== "undefined") {
+        AOS.refresh(); // Use only this, not refreshHard()
+      }
+
+      // Show product section too
+      productsSection.classList.remove("hidden");
     });
   });
+
+  // Initial state
+  aboutSection.classList.remove("hidden");
+  productsSection.classList.remove("hidden");
 };
 
 const textAnimate = () => {
@@ -61,3 +89,7 @@ const textAnimate = () => {
     });
   });
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  setUpFilter();
+});

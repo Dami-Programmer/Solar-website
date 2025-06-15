@@ -370,6 +370,5 @@ const populateProductGrid = () => {
   setUpFilter();
   textAnimate();
 };
-
 // Initialize when DOM is ready
 document.addEventListener("DOMContentLoaded", populateProductGrid);

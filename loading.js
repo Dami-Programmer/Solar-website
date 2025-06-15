@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const loadingPage = document.getElementById("loading-page");
-  const mainContent = document.getElementById("main-content");
+  // const mainContent = document.getElementById("main-content");
   const progressBar = document.getElementById("progress-bar");
   const progressPercentage = document.getElementById("progress-percentage");
   const loadingStatus = document.getElementById("loading-status");
@@ -99,9 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
         loadingPage.style.opacity = "0"; // Fade out loading page
         setTimeout(() => {
           loadingPage.style.display = "none"; // Hide completely
-          mainContent.style.display = "flex"; // Show main content
+          // mainContent.style.display = "flex"; // Show main content
           setTimeout(() => {
-            mainContent.style.opacity = "1"; // Fade in main content
+            // mainContent.style.opacity = "1"; // Fade in main content
           }, 50); // Small delay to ensure display change takes effect
         }, 1000); // Wait for loading page fade out (1 second)
       }, 800); // Additional delay after 100% before fade out (0.8 seconds)

@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Periodically create particles
   const particleInterval = setInterval(createParticle, 300);
 
-  // Simulate loading
+  // Simulate looading
   let currentProgress = 0;
   const simulationDuration = 4000; // Total simulation time in ms (e.g., 4 seconds)
   const updateInterval = 50; // How often to update progress in ms

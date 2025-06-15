@@ -32,19 +32,23 @@ const textAnimate = () => {
     const subtitle = document.querySelector(".hero-subtitle");
     const buttons = document.querySelector(".hero-buttons");
 
-    // Show text content with animation
+    // Delay the animations by 7 seconds
     setTimeout(() => {
-      title.classList.add("animate");
-    }, 100);
+      // Show text content with animation
+      setTimeout(() => {
+        title.classList.add("animate");
+      }, 100);
 
-    setTimeout(() => {
-      subtitle.classList.add("animate");
-    }, 400);
+      setTimeout(() => {
+        subtitle.classList.add("animate");
+      }, 400);
 
-    setTimeout(() => {
-      buttons.classList.add("animate");
-    }, 700);
+      setTimeout(() => {
+        buttons.classList.add("animate");
+      }, 700);
+    }, 6000);
 
+    // Scroll events can still work immediately
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
       const translateY = Math.min(scrollY * 0.5, 100);

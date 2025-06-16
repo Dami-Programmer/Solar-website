@@ -1,4 +1,3 @@
-// Dark Mode Toggle with new design
 const darkModeToggle = document.createElement("button");
 darkModeToggle.className = "dark-mode-toggle";
 darkModeToggle.innerHTML = `
@@ -8,7 +7,6 @@ darkModeToggle.innerHTML = `
 `;
 document.body.appendChild(darkModeToggle);
 
-// Check for saved user preference or use system preference
 const currentTheme =
   localStorage.getItem("theme") ||
   (window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -20,7 +18,6 @@ if (currentTheme === "dark") {
   document.body.classList.add("dark-mode");
 }
 
-// Toggle dark mode
 darkModeToggle.addEventListener("click", () => {
   const newTheme =
     document.documentElement.getAttribute("data-theme") === "dark"
@@ -30,7 +27,6 @@ darkModeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   localStorage.setItem("theme", newTheme);
 
-  // Change icon based on theme
   const iconPath =
     newTheme === "dark"
       ? '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>'

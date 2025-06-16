@@ -1,4 +1,3 @@
-// Initialize AOS (Animate On Scroll)
 AOS.init({
   duration: 800,
   easing: "ease-in-out",
@@ -19,35 +18,28 @@ const setUpFilter = () => {
     button.addEventListener("click", () => {
       const filter = button.getAttribute("data-filter");
 
-      // Update active button
       buttons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
-      // Filter product cards
       items.forEach((item) => {
         const match = filter === "all" || item.classList.contains(filter);
         item.classList.toggle("hidden", !match);
       });
 
-      // Always show About section
       aboutSection.classList.remove("hidden");
 
-      // ✅ Reset AOS animation on About section
       aboutSection.classList.remove("aos-animate");
-      void aboutSection.offsetWidth; // Trigger reflow
+      void aboutSection.offsetWidth;
       aboutSection.classList.add("aos-animate");
 
-      // ✅ Refresh AOS in case new elements are revealed
       if (typeof AOS !== "undefined") {
-        AOS.refresh(); // Use only this, not refreshHard()
+        AOS.refresh();
       }
 
-      // Show product section too
       productsSection.classList.remove("hidden");
     });
   });
 
-  // Initial state
   aboutSection.classList.remove("hidden");
   productsSection.classList.remove("hidden");
 };
@@ -60,9 +52,7 @@ const textAnimate = () => {
     const subtitle = document.querySelector(".hero-subtitle");
     const buttons = document.querySelector(".hero-buttons");
 
-    // Delay the animations by 7 seconds
     setTimeout(() => {
-      // Show text content with animation
       setTimeout(() => {
         title.classList.add("animate");
       }, 100);
@@ -76,7 +66,6 @@ const textAnimate = () => {
       }, 700);
     }, 6000);
 
-    // Scroll events can still work immediately
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
       const translateY = Math.min(scrollY * 0.5, 100);

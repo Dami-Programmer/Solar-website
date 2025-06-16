@@ -1,4 +1,3 @@
-// Example JSON data (can be loaded from an external source)
 const solarProducts = [
   {
     category: "Inverter",
@@ -338,7 +337,6 @@ const solarProducts = [
   },
 ];
 
-// Populate the grid using ES6+ syntax
 const populateProductGrid = () => {
   const grid = document.getElementById("productGrid");
 
@@ -358,7 +356,7 @@ const populateProductGrid = () => {
             <p>${description}</p>
             <div class="price-action">
               
-              <button class="details-btn">Avaliable at the store</button>
+              <a href="#about" class="details-btn">Avaliable at the store</a>
             </div>
           </div>
         `;
@@ -370,5 +368,5 @@ const populateProductGrid = () => {
   setUpFilter();
   textAnimate();
 };
-// Initialize when DOM is ready
+
 document.addEventListener("DOMContentLoaded", populateProductGrid);

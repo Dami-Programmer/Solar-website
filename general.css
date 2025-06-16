@@ -6,9 +6,15 @@
 
 html {
   font-size: 62.5%;
+
+  scroll-behavior: smooth;
 }
 
-/* Testing */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  color: #222;
+}
 
 .hero-section {
   position: relative;
@@ -104,6 +110,7 @@ html {
   font-weight: 600;
   transition: transform 0.3s, background 0.3s, border 0.3s;
   border: none;
+  text-decoration: none;
 }
 
 .primary {
@@ -148,14 +155,6 @@ html {
   50% {
     transform: translateY(0.5rem);
   }
-}
-
-/* Testing */
-
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  color: #222;
 }
 
 .heading-primary,

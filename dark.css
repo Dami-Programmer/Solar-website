@@ -1,23 +1,20 @@
-/* Light Mode (Default) */
 body {
   background: #ffffff;
   color: #333333;
 }
 
-/* Dark Mode (when .dark-mode class is added to body) */
 body.dark-mode {
   background: #121212;
   color: #f0f0f0;
 }
 
-/* Dark mode toggle button */
 .dark-mode-toggle {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 3rem;
+  right: 3rem;
   z-index: 10;
-  width: 60px;
-  height: 60px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   background-color: #222;
   color: white;
@@ -29,7 +26,7 @@ body.dark-mode {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: "Rubik", sans-serif;
 }
 
@@ -48,7 +45,6 @@ body.dark-mode {
   transition: all 0.3s ease;
 }
 
-/* Light mode specific styles */
 [data-theme="light"] .dark-mode-toggle {
   background-color: #f0f0f0;
   color: #222;
@@ -58,7 +54,6 @@ body.dark-mode {
   fill: #222;
 }
 
-/* Dark mode specific styles */
 [data-theme="dark"] .dark-mode-toggle {
   background-color: #333;
   color: #fff;
@@ -68,13 +63,11 @@ body.dark-mode {
   fill: #fff;
 }
 
-/* Apply dark mode styles */
 body.dark-mode {
   background-color: #121212;
   color: #e5e5e5;
 }
 
-/* Hero section adjustments for dark mode */
 .dark-mode .hero-overlay {
   background: linear-gradient(
     to bottom,
@@ -83,7 +76,6 @@ body.dark-mode {
   );
 }
 
-/* Components */
 .dark-mode .category-button,
 .dark-mode .product-card,
 .dark-mode .highlight-box,

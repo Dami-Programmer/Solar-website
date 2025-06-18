@@ -356,7 +356,8 @@ const populateProductGrid = () => {
             <p>${description}</p>
             <div class="price-action">
               
-              <a href="#about" class="details-btn">Avaliable at the store</a>
+              <button class="details-btn" onclick="openPopup(event)">Available at the store</button>
+
             </div>
           </div>
         `;

@@ -68,12 +68,21 @@ body.dark-mode {
   color: #e5e5e5;
 }
 
+.dark-mode .hero-title {
+  z-index: 100;
+}
+
 .dark-mode .hero-overlay {
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.8)
   );
+}
+
+.dark-mode .contact-item span {
+  font-size: 2rem;
+  color: #222;
 }
 
 .dark-mode .category-button,
@@ -83,6 +92,10 @@ body.dark-mode {
 .dark-mode .testimonial {
   background-color: #1e1e1e;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .feature-tertiary,
+.dark-mode .product-text {
   color: #e5e5e5;
 }
 
@@ -102,6 +115,9 @@ body.dark-mode {
   color: #a1a1a1;
 }
 
+.dark-mode .text-true {
+  color: #fff;
+}
 .dark-mode .product-header,
 .dark-mode .feature {
   color: #e5e5e5;

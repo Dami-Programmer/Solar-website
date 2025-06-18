@@ -6,7 +6,6 @@
     max-width: 120rem;
   }
   .grid-3,
-  .product-grid,
   .category-grid {
     gap: 8rem;
   }

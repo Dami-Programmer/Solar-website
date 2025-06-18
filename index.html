@@ -16,10 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="dark.css">
     <link rel="stylesheet" href="loadingPage.css">
@@ -53,14 +56,39 @@
       <div class="particles-container" id="particles-container"></div>
     </div>
 
-
+<!-- Overlay and Popup -->
+<div id="popupOverlay" class="popup-overlay" onclick="closePopup(event)">
+  <div class="popup-box" onclick="event.stopPropagation()">
+    <div class="contact-item">
+      <img src="image/IG.svg" alt="Instagram">
+      <span>rvpowers_
+</span>
+    </div>
+    <div class="contact-item">
+      <img src="image/fb.svg" alt="Facebook">
+      <span>Rv powers </span>
+    </div>
+    <div class="contact-item">
+      <img src="image/gmail_5968534.png" alt="Gmail">
+      <span>rvpowers1@gmail.com</span>
+    </div>
+    <div class="contact-item">
+      <img src="image/social_13670447.png" alt="WhatsApp">
+      <span>+234 806 693 8702</span>
+    </div>
+    <div class="contact-item address">
+      <img src="image/map-location_580141.png" alt="Address">
+      <span>No 6 Okija Street, Mile 1 Diobu. Port Harcourt, Rivers State</span>
+    </div>
+  </div>
+</div>
 
 <section id="hero" class="hero-section">
   
 
       <div id="hero-bg" class="hero-bg">
         <img
-          src="image/background.jpg"
+          src="image/background.webp"
           alt="iPhone hero image"
           class="hero-img"
         />
@@ -68,8 +96,8 @@
       </div>
 
       <div class="hero-content">
-        <h1 class="hero-title">illuminate Your Future</h1>
-        <h2 class="hero-subtitle">Sustainable Solar Solutions for a Brighter Tomorrow.</h2>
+        <h1 class="hero-title">illuminate your future</h1>
+        <h2 class="hero-subtitle">Sustainable solar solutions for a brighter tomorrow.</h2>
         <div class="hero-buttons">
           <a href="#products" class="btn primary">Order Now</a>
         </div>
@@ -242,7 +270,7 @@
       <div class="container">
         <div class="text-center">
           <h2 class="product-header">Our Products</h2>
-          <p>
+          <p class="product-text">
             Browse our selection of premium solar equipment and find the perfect
             solution for your needs
           </p>
@@ -290,19 +318,19 @@
             <div class="highlight-box grid highlight-grid-2">
               <div class="stat">
                 <span class="stat-number">10k+</span>
-                <span>Installations</span>
+                <span class="stat-text">Installations</span>
               </div>
               <div class="stat">
                 <span class="stat-number">98%</span>
-                <span>Client Satisfaction</span>
+                <span class="stat-text">Client Satisfaction</span>
               </div>
               <div class="stat">
                 <span class="stat-number">15+</span>
-                <span>Years Experience</span>
+                <span class="stat-text">Years Experience</span>
               </div>
               <div class="stat">
                 <span class="stat-number">24/7</span>
-                <span>Support</span>
+                <span class="stat-text">Support</span>
               </div>
             </div>
           </div>
@@ -396,7 +424,7 @@
         </div>
 
         <div class="text-center">
-          <h2>Trusted by Businesses & Homeowners</h2>
+          <h2 class="text-true">Trusted by Businesses & Homeowners</h2>
         </div>
 
         <div class="grid grid-3">
@@ -454,7 +482,7 @@
               energy bills have significantly decreased.
             </p>
             <div class="border-btm"></div>
-            <div class="author">Sarah Johnson</div>
+            <div class="author">Gajere Muhammadu</div>
             <div class="role">Home Owner</div>
           </div>
           <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
@@ -511,7 +539,7 @@
               support. Highly recommended!
             </p>
             <div class="border-btm"></div>
-            <div class="author">Michael Chen</div>
+            <div class="author">Femi Oluwatobi</div>
             <div class="role">Business Owner</div>
           </div>
           <div class="testimonial" data-aos="fade-up" data-aos-delay="300">
@@ -568,7 +596,7 @@
               very satisfied with their work.
             </p>
             <div class="border-btm"></div>
-            <div class="author">Emma Lee</div>
+            <div class="author">Adaeze Ebuka </div>
             <div class="role">Home Owner</div>
           </div>
         </div>
@@ -588,9 +616,14 @@
           </div>
           <div>
             <h3 class="footer-heading">Contact Us</h3>
-            <p class="footer-text">No 6 Okija Street, Mile 1 Diobu. </p>
-            <p class="footer-text">Port Harcourt, Rivers State</p>
-            <p class="footer-text">rvpowers1@gmail.com</p>
+            <p class="footer-text">
+  <a href="https://www.google.com/maps?q=No+6+Okija+Street,+Mile+1+Diobu,+Port+Harcourt,+Rivers+State" target="_blank">
+    No 6 Okija Street, Mile 1 Diobu. Port Harcourt, Rivers State
+  </a>
+</p>
+            <p class="footer-text">
+  <a href="mailto:rvpowers1@gmail.com">rvpowers1@gmail.com</a>
+</p>
           </div>
           <div>
             <h3 class="footer-heading">Connect With Us</h3>
@@ -665,6 +698,7 @@
   });
 </script>
 
+<script src="popup.js"></script>
    <script src="loading.js"></script>
    <script src="dark.js"></script>
     <script src="product.js"></script>

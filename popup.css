@@ -39,11 +39,16 @@
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
 }
 
-.contact-item span {
+.contact-item a {
   font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .contact-item img {
